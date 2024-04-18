@@ -15,7 +15,7 @@ export default class Home extends Component {
     return (
       <main>
         <BackgroundImg
-          src={background}
+          src={image}
           height={110}
         />
         <Layout isIndex={true}>

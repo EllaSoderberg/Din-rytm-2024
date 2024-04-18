@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

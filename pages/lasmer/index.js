@@ -48,7 +48,7 @@ export default class Blog extends Component {
       <div className="">
         <PageContainer>
           <div className="text-5xl font-serif p-4 ">Läs mer</div>
-          <div className="block flex uppercase px-4">
+          <div className="flex uppercase px-4">
             <div onClick={this.toggleAktuellt}>
               <GreenButton isActive={this.state.aktuelltIsActive}>
                 Aktuellt
@@ -61,6 +61,7 @@ export default class Blog extends Component {
             </div>
           </div>
           {postsList.map(post => {
+            console.log(post)
             return (
               <Card
                 key={post.attributes.title}
@@ -68,7 +69,7 @@ export default class Blog extends Component {
                 title={post.attributes.title}
                 date={post.attributes.date}
                 category={post.attributes.category}
-                slug={"/"}
+                slug={"lasmer/" + post.slug}
                 aktuelltIsActive={this.state.aktuelltIsActive}
                 forskningIsActive={this.state.forskningIsActive}
               ></Card>

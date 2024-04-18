@@ -2,6 +2,7 @@ import { Component } from 'react';
 import Logo from "@/public/img/LogoWhite.svg"
 import Link from "next/link"
 import Image from "next/image"
+import { Nav } from './nav';
 
 export default class Header extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ export default class Header extends Component {
         } z-40 uppercase fixed w-full ease-out duration-300 transition-all`}
       >
         <div className="flex justify-start mx-auto p-4 md:p-8 ">
+          <Nav/>
           <Link
             className={`${
               transparent
