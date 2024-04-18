@@ -60,6 +60,7 @@ export default class Blog extends Component {
               </GreenButton>
             </div>
           </div>
+          <div className="flex flex-wrap justify-around">
           {postsList.map(post => {
             console.log(post)
             return (
@@ -75,6 +76,7 @@ export default class Blog extends Component {
               ></Card>
             );
           })}
+          </div>
         </PageContainer>
       </div>
     );

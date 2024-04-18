@@ -6,7 +6,6 @@ import Image from "next/image";
 export default class Om extends Component {
     render() {
         let { about, image } = attributes.attributes
-        console.log(attributes.about)
         return (
             <div>
                 <PageContainer>
